@@ -13,7 +13,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.grid}>
           <div className={styles.logo}>
-            <img id={styles.logo} src="/logo.jpg"/>
+            <Image id={styles.logo} src="/logo.jpg"/>
             <span>IHC Transporte</span>
           </div>
           <br/>
