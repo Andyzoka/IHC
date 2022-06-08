@@ -1,5 +1,4 @@
 import { useState} from 'react';
-import '../styles/App.module.css'
 
 function Trocar() {
     const [origem, setOrigem] = useState('Maringá');

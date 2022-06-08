@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.grid}>
           <div className={styles.logo}>
-            <Image id={styles.logo} src="/logo.jpg"/>
+            <Image itemID={styles.logo} src="/logo.jpg" alt='carro com uma lupa sobrepondo tudo em azul claro'/>
             <span>IHC Transporte</span>
           </div>
           <br/>
@@ -28,13 +29,13 @@ export default function Home() {
         </div>
         <div className={styles.buttonContainer}>
           <div className={styles.homeButton}>
-            <a href="login">Login</a>
+            <Link href="login">Login</Link>
           </div>
           <div className={styles.homeButton}>
-            <a href="cadastro">Cadastro</a>
+            <Link href="cadastro">Cadastro</Link>
           </div>
-          <div id={styles.tourButton}>
-            <a href="app">Usar sem cadastro</a>
+          <div itemID={styles.tourButton}>
+            <Link href="app">Usar sem cadastro</Link>
           </div>
         </div>
       </main>

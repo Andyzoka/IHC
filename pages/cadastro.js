@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import '../styles/Register.module.css'
+import styles from '../styles/Register.module.css'
 
 export default function Cadastro() {
   return (
@@ -12,7 +12,7 @@ export default function Cadastro() {
 
       <main className={styles.main}>
         <div className={styles.logo}>
-          <img src="/logo.jpg"/>
+          <Image itemID={styles.logo} src="/logo.jpg" alt='carro com uma lupa sobrepondo tudo em azul claro'/>
           <span>IHC Transporte</span>
           <br/>
           <span>
