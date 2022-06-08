@@ -4,6 +4,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+
+  --green: rgb(54, 220, 164);
+  --blue: rgb(8, 50, 68);
 }
 
 a {

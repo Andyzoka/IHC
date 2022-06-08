@@ -12,26 +12,30 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.grid}>
-          <img id={styles.logo} src="/logo.jpg"/>
-          <span>IHC Transporte</span>
+          <div class={styles.logo}>
+            <img id={styles.logo} src="/logo.jpg"/>
+            <span>IHC Transporte</span>
+          </div>
           <br/>
-          <span>
-            Melhores preços com uma simples pesquisa!
-          </span>
-          <span>
-            Experimente grátis
-          </span>
+          <div class={styles.intro}>
+            <span>
+              Melhores preços com uma simples pesquisa!
+            </span>
+            <span>
+              Experimente grátis
+            </span>
+          </div>
         </div>
         <div className={styles.buttonContainer}>
           <div className={styles.homeButton}>
-            <a href="cadastro">Cadastro</a>
-          </div>
-          <div className={styles.homeButton}>
             <a href="login">Login</a>
           </div>
-        </div>
-        <div className={styles.tourButton}>
-          <a href="app">Usar sem cadastro</a>
+          <div className={styles.homeButton}>
+            <a href="cadastro">Cadastro</a>
+          </div>
+          <div id={styles.tourButton}>
+            <a href="app">Usar sem cadastro</a>
+          </div>
         </div>
       </main>
 
@@ -40,7 +44,7 @@ export default function Home() {
           Projeto IHC 
         </p>
         <p>
-          Professor Roberto Michelan
+          Profº Roberto Michelan
         </p>
       </footer>
     </div>

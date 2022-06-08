@@ -2,7 +2,7 @@
   position: relative;
   height: 100vh;
   padding: 0 2rem;
-  background-color: rgb(8, 50, 68);
+  background-color: var(--blue);
 }
 
 .main {
@@ -28,44 +28,67 @@
 .grid {
   margin: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  color: rgb(54, 220, 164);
+  color: var(--green);
 }
 
 .grid > span {
   margin-bottom: 1rem;
 }
 
-#logo {
+.grid #logo {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
 }
 
+.grid .logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid .intro {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .buttonContainer {
   margin-top: 5rem;
   width: 90vw;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 
 .homeButton {
-  width: 45%;
+  width: 15rem;
   height: 2rem;
+  margin-bottom: .5rem;
   display: flex;
   border-radius: .2rem;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(54, 220, 164);
+  background-color: var(--green);
 }
 
-.tourButton {
-  margin-top: 1rem;
+.homeButton a,
+#tourButton a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#tourButton {
+  display: flex;
+  width: 15rem;
+  height: 2rem;
   color: rgb(54, 220, 164);
-  padding: .2rem .5rem;
-  border: 1px solid rgb(54, 220, 164);
+  border: 1px solid var(--green);
   border-radius: .2rem;
 }
 
@@ -85,9 +108,77 @@
   color: gray;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 800px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
   .grid {
-    width: 100%;
+    font-size: 1.5rem;
+
+    width: 100vw;
+    margin: 0;
+    margin-bottom: 5rem;
+    position: relative;
+    display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--green);
+  }
+
+  .grid .logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid #logo {
+    margin: 0 1rem;
+  }
+  
+  #logo {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
+  
+  .buttonContainer {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .homeButton {
+    width: 20rem;
+    height: 3rem;
+    margin: .5rem 0;
+    display: flex;
+    border-radius: .2rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--green);
+  }
+  
+  .homeButton a,
+  #tourButton a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #tourButton {
+    display: flex;
+    width: 20rem;
+    height: 3rem;
+    margin-top: .5rem;
+    color: rgb(54, 220, 164);
+    border: 1px solid var(--green);
+    border-radius: .2rem;
   }
 }

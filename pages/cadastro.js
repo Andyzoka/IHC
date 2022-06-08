@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import '../styles/Register.module.css'
 
-export default function Home() {
+export default function Cadastro() {
   return (
     <div className={styles.container}>
       <Head>
@@ -11,27 +11,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.grid}>
-          <img id={styles.logo} src="/logo.jpg"/>
+        <div className={styles.logo}>
+          <img src="/logo.jpg"/>
           <span>IHC Transporte</span>
           <br/>
           <span>
-            Melhores preços com uma simples pesquisa!
+            Cadastro
           </span>
-          <span>
-            Experimente grátis
-          </span>
-        </div>
-        <div className={styles.buttonContainer}>
-          <div className={styles.homeButton}>
-            <a href="cadastro">Cadastro</a>
-          </div>
-          <div className={styles.homeButton}>
-            <a href="login">Login</a>
-          </div>
-        </div>
-        <div className={styles.tourButton}>
-          <a href="app">Usar sem cadastro</a>
         </div>
       </main>
 
