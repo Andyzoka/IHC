@@ -12,12 +12,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.grid}>
-          <div class={styles.logo}>
+          <div className={styles.logo}>
             <img id={styles.logo} src="/logo.jpg"/>
             <span>IHC Transporte</span>
           </div>
           <br/>
-          <div class={styles.intro}>
+          <div className={styles.intro}>
             <span>
               Melhores preços com uma simples pesquisa!
             </span>

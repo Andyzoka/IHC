@@ -22,7 +22,7 @@ function Trocar() {
 
 export default function Cadastro() {
     return (
-        <div class="container">
+        <div className="container">
             <span>origem: <Trocar/></span> 
         </div>
     )
