@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 import styles from '../styles/Login.module.css'
 
 export default function Home() {
@@ -25,14 +23,14 @@ export default function Home() {
         </div>
         <div className={styles.buttonContainer}>
           <div className={styles.homeButton}>
-            <Link href="cadastro">Cadastro</Link>
+            <a href="cadastro">Cadastro</a>
           </div>
           <div className={styles.homeButton}>
-            <Link href="login">Login</Link>
+            <a href="login">Login</a>
           </div>
         </div>
-        <div className={styles.tourButton}>
-          <Link href="app">Usar sem cadastro</Link>
+        <div id={styles.tourButton}>
+          <a href="app">Usar sem cadastro</a>
         </div>
       </main>
 

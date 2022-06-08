@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -29,13 +27,13 @@ export default function Home() {
         </div>
         <div className={styles.buttonContainer}>
           <div className={styles.homeButton}>
-            <Link href="login">Login</Link>
+            <a href="login">Login</a>
           </div>
           <div className={styles.homeButton}>
-            <Link href="cadastro">Cadastro</Link>
+            <a href="cadastro">Cadastro</a>
           </div>
-          <div itemID={styles.tourButton}>
-            <Link href="app">Usar sem cadastro</Link>
+          <div id={styles.tourButton}>
+            <a href="app">Usar sem cadastro</a>
           </div>
         </div>
       </main>
@@ -46,6 +44,9 @@ export default function Home() {
         </p>
         <p>
           Profº Roberto Michelan
+        </p>
+        <p>
+          Alunos:
         </p>
       </footer>
     </div>
