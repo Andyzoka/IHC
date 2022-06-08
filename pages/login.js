@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.grid}>
-          <Image itemID={styles.logo} src="/logo.jpg" alt='carro com uma lupa sobrepondo tudo em azul claro'/>
+          <img id={styles.logo} src="/logo.jpg" alt='carro com uma lupa sobrepondo tudo em azul claro'/>
           <span>IHC Transporte</span>
           <br/>
           <span>

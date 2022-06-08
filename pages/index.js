@@ -8,13 +8,13 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>IHC Transporte</title>
-        <link rel="icon" href="/react.ico" />
+        <link rel="icon" href="../public/react.ico" />
       </Head>
 
       <main className={styles.main}>
         <div className={styles.grid}>
           <div className={styles.logo}>
-            <Image itemID={styles.logo} src="/logo.jpg" alt='carro com uma lupa sobrepondo tudo em azul claro'/>
+            <img id={styles.logo} src="/logo.jpg" alt='carro com uma lupa sobrepondo tudo em azul claro'/>
             <span>IHC Transporte</span>
           </div>
           <br/>
