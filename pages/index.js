@@ -6,7 +6,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>IHC Transporte</title>
-        <link rel="icon" href="../public/react.ico" />
+        <link rel="icon" href="/react.ico" />
       </Head>
 
       <main className={styles.main}>
