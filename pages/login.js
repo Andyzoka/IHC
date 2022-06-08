@@ -37,7 +37,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <p>
-          Projeto IHC 
+          Projeto para o curso de IHC 
         </p>
         <p>
           Professor Roberto Michelan
