@@ -8,7 +8,6 @@ export default function Home() {
         <title>IHC Transporte</title>
         <link rel="icon" href="/react.ico" />
       </Head>
-
       <main className={styles.main}>
         <div className={styles.grid}>
           <div className={styles.logo}>
