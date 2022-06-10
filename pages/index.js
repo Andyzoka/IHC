@@ -37,18 +37,18 @@ export default function Home() {
           </div>
         </div>
       </main>
-
       <footer className={styles.footer}>
-        <p>
-          Projeto IHC 
-        </p>
-        <p>
-          Profº Roberto Michelan
-        </p>
-        <p>
-          Alunos:
-        </p>
-      </footer>
+          <p>
+            Projeto IHC 
+          </p>
+          <p>
+            Profº Roberto Michelan
+          </p>
+          <p>
+            Alunos:
+          </p>
+        </footer>
     </div>
   )
 }
+
