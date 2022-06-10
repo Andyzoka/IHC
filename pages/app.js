@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/App.module.css'
 
 import { useState} from 'react';
@@ -12,10 +13,10 @@ export default function Cadastro() {
             </Head>
             <div className={styles.header}>
                 <div className={styles.logo}>
-                    <a href='/'>
+                    <Link href='/'>
                         <img id={styles.logo} src="/logo.jpg" alt='carro com uma lupa sobrepondo tudo em azul claro'/>
                         <span>IHC Transporte</span>
-                    </a>
+                    </Link>
                 </div>
                 <div className={styles.search}>
                     <form className={styles.form}>
