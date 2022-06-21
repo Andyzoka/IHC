@@ -1,0 +1,74 @@
+.resultContainer {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 97vw;
+    height: 500px;
+    justify-content: center;
+}
+
+.resultContainer .result {
+    width: 95%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    margin: .5rem .5rem 1rem 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: .2rem;
+    background-color: rgb(38, 84, 105);
+    -webkit-box-shadow: -1px 2px 12px 1px rgba(0,0,0,0.87);
+    -moz-box-shadow: -1px 2px 12px 1px rgba(0,0,0,0.87);
+    box-shadow: -1px 2px 12px 1px rgba(0,0,0,0.87);
+}
+
+.resultContainer .result .logoApp img { 
+    min-width: 60px;
+    height: 100%;
+    
+    padding-right: .2rem;
+}
+
+.resultContainer .result .resultContent {
+    width: 100%;
+    color: var(--green);
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-evenly; 
+    align-items: center;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.resultContainer .result .resultContent > span {
+    border: 1px solid;
+    padding: .1rem;
+}
+.resultContainer .result .resultContent .localContainer {
+    display: none;
+}
+
+
+.resultContainer .result .appLink {
+    display: flex;
+    min-width: 100px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+@media (min-width: 800px){
+    .resultContainer {
+        min-height: 600px;
+    }
+
+    .resultContainer .result .resultContent .localContainer {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        padding: 0;
+    }
+}

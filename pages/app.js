@@ -1,6 +1,9 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import styles from '../styles/App.module.css'
+import Head from 'next/head';
+import Link from 'next/link';
+import styles from '../styles/App.module.css';
+import Result from './component/result';
+import getLocais from './component/locais';
+import Footer from './component/footer'
 
 export default function Cadastro() {
     return (
@@ -20,29 +23,44 @@ export default function Cadastro() {
                         </Link>
                     </div>
                     <div className={styles.search}>
-                        <form className={styles.form}>
-                            <label name='origem'>Comece por digitar o <span>local de origem</span></label>
-                            <input name='origem' type='text' placeholder='R. Alexandra, 91 - Parque Res. PatriciaMaringá - PR, 87040-460'/>
-                            <label name='destino'>Em seguida digite o <span>local de destino</span></label>
-                            <input name='destino' type='text' placeholder='Praça da Catedral, s/n - Zona 02, Maringá - PR, 87010-530'/>
+                        <form className={styles.form} method='post' name='form'>
+                            <label>Comece por digitar o <span>local de origem</span></label>
+                            {getLocais()}
+                            <label>Em seguida digite o <span>local de destino</span></label>
+                            {getLocais()}                           
+                            <button>Encontrar viajem</button>
                         </form>
                     </div>
                 </div>
-                <div className={styles.result}>
-                    teste
+                <div className={styles.filtro}>
+                        <label>Filtrar: </label>
+                        <select>
+                            <option>
+                            </option>
+                            <option>
+                                Preço: Menor ao Maior
+                            </option>
+                            <option>
+                                Preço: Maior ao Menor
+                            </option>
+                            <option>
+                                Corrida mais rapida
+                            </option>
+                            <option>
+                                App mais utilizado
+                            </option>
+                            <option>
+                                App melhor avaliado nas lojas
+                            </option>
+                        </select>
+                </div>
+                <div className={styles.appContainer}>
+                    {Result()}
                 </div>
             </main>
-            <footer>
-                <p>
-                    Projeto IHC 
-                </p>
-                <p>
-                    Profº Roberto Michelan
-                </p>
-                <p>
-                    Alunos:
-                </p>
-            </footer>
+            <div className={styles.footer}>
+                {Footer()}
+            </div>
         </div>
     )
 }

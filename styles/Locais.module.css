@@ -1,0 +1,15 @@
+.optionContainer {
+    display: flex;
+    width: 100%;
+    height: 10%;
+}
+
+.optionContainer .searchArea{
+    height: 2rem;
+    margin: .5rem 0;
+    width: 100%;
+    height: 5%;
+    border: 2px solid var(--green);
+    border-radius: .2rem;
+
+}

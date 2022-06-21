@@ -4,21 +4,24 @@
     width: 100vw;
     margin: 0;
     padding: 0;
+    padding-top: .2rem;
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
+    align-items: center;
     color: var(--green);
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .container .main {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
 }
     
 .container .main .header {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -51,7 +54,7 @@
 
 .container .main .header .search .form {
     padding: 0;
-    margin: 1rem;
+    margin: .5rem;
     display: flex;
     flex-direction: column;
 }
@@ -63,33 +66,65 @@
     text-decoration: underline;
 }
 
-.container .main .header .search input {
+
+
+.container .main .header .search button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    min-width: 100px;
     height: 2rem;
-    margin: .5rem 0;
-    border: 2px solid var(--green);
+    border: 1px solid var(--green);
     border-radius: .2rem;
+    align-self: center;
 }
 
-.container .main .result {
-    margin: 0;
-    height: 100%;
-    background-color: black;
+.container .main .filtro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem 2rem 0 2rem;
+    height: 1rem;
 }
 
-.container footer {
-    margin: 0;
+.container .main .filtro select {
+    margin: 1rem;
+    height: 1.5rem;
+    border-radius: .5rem;
+    border: 1px solid var(--green);
+}
+
+.container .main .appContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    margin-top: 0;
     padding: 0;
-    text-align: center;
+    width: 10%;
+    height: 10px;
 }
 
-.container footer p {
-    margin: 0;
-    
+.container .footer {
 }
 
 @media (min-width: 800px) {
+    
     .container .main .header {
         flex-direction: row;
         font-size: 1.2rem;
+    }
+
+    .container .main .header .search button {
+        margin-right: 5rem;
+    }
+
+    .container .main .filtro {
+        justify-content: end;
+    }
+}
+
+
+@media (max-height: 790px){
+    .footer {
+        display: none;
     }
 }
