@@ -16,7 +16,7 @@ function Result(){
                     <span>R$ 20,00</span>
                 </div>
                 <div className={styles.appLink}>
-                    <Link href='www.uber.com'>Ir ao APP</Link>
+                    <Link href='https://www.uber.com'>Ir ao APP</Link>
                 </div>
             </div>
             <div className={styles.result}>
@@ -31,7 +31,7 @@ function Result(){
                     <span>R$ 22,00</span>
                 </div>
                 <div className={styles.appLink}>
-                    <Link href='www.uber.com'>Ir ao APP</Link>
+                    <Link href='https://99app.com/'>Ir ao APP</Link>
                 </div>
             </div>
             <div className={styles.result}>
@@ -46,7 +46,7 @@ function Result(){
                     <span>R$ 18,00</span>
                 </div>
                 <div className={styles.appLink}>
-                    <Link href='https://www.uber.com'>Ir ao APP</Link>
+                    <Link href='https://play.google.com/store/apps/details?id=com.cabify.rider&hl=pt_BR&gl=US'>Ir ao APP</Link>
                 </div>
             </div>
             <div className={styles.result}>
@@ -61,7 +61,7 @@ function Result(){
                     <span>R$ 16,00</span>
                 </div>
                 <div className={styles.appLink}>
-                    <Link href='https://www.uber.com'>Ir ao APP</Link>
+                    <Link href='https://play.google.com/store/apps/details?id=com.taxsee.taxsee&hl=pt_BR&gl=PW'>Ir ao APP</Link>
                 </div>
             </div>
             <div className={styles.result}>
@@ -76,7 +76,7 @@ function Result(){
                     <span>R$ 19,00</span>
                 </div>
                 <div className={styles.appLink}>
-                    <Link href='https://www.uber.com'>Ir ao APP</Link>
+                    <Link href='https://indriver.com/pt/city'>Ir ao APP</Link>
                 </div>
             </div>
             <div className={styles.result}>
@@ -91,7 +91,7 @@ function Result(){
                     <span>R$ 25,00</span>
                 </div>
                 <div className={styles.appLink}>
-                    <Link href='https://www.uber.com'>Ir ao APP</Link>
+                    <Link href='https://play.google.com/store/apps/details?id=br.com.urbanonorte.passenger.drivermachine&hl=pt_BR&gl=US'>Ir ao APP</Link>
                 </div>
             </div>
         </div>
