@@ -12,6 +12,7 @@ function Footer(){
                 </p>
                 <p>
                     Alunos:
+                    Thauer Furtado, Anderson Medeiros, Izabela Granado, Felipe Dias, Geovanna Cardoso da Silva
                 </p>
             </footer>
         </div>
